@@ -3,26 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+
+    <!-- embed fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- embed font icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/index_styles.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="header fixed">
-      <div class="main-content">
-        <div class="body">
-          <!-- top banner -->
-          <div class="top-banner">
+      <!-- head-top -->
+      <div class="head-top">
+        <div class="main-content">
+          <div class="body">
+            <!-- banner1 -->
             <a href="">
               <img
                 src="./img/header/Top banner_Smember.svg"
                 alt="Top banner_Smember"
               />
             </a>
+
+            <!-- banner2 -->
             <a href="">
               <img
                 src="./img/header/Top banner_Giao hang.svg"
                 alt="Top banner_Giao hang"
               />
             </a>
+
+            <!-- banner3 -->
             <a href="">
               <img
                 src="./img/header/Top banner_Thu cu.svg"
@@ -30,17 +54,72 @@
               />
             </a>
           </div>
+        </div>
+      </div>
 
-          <!-- nav -->
-          <nav class="nav">
+      <!-- nav -->
+      <div class="nav">
+        <div class="main-content">
+          <div class="body">
             <!-- logo -->
-            <a href="">
-              <img src="./img/header/logo.png" alt="logo" class="logo" />
-            </a>
+            <div class="logo">
+              <a href="">
+                <img src="./img/header/logo.png" alt="logo" />
+              </a>
+            </div>
 
-            <!-- local-store -->
-             .local-store>a>
-          </nav>
+            <!-- category -->
+            <div class="item category">
+              <div class="icon">
+                <a href="">
+                  <img src="./icon/category.svg" alt="category" />
+                </a>
+              </div>
+              <p>Danh mục</p>
+            </div>
+
+            <!-- search bar -->
+            <div class="item search-bar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                name="txt-search-bar"
+                placeholder="Bạn cần tìm gì"
+              />
+            </div>
+
+            <!-- call -->
+            <div class="item call">
+              <div class="icon">
+                <img src="./icon/call.svg" alt="call" />
+              </div>
+              <p>Gọi mua hàng <br />1800.2097</p>
+            </div>
+
+            <!-- order lookup -->
+            <div class="item order-lookup">
+              <img
+                src="./icon/order-lookup.svg"
+                alt="order-lookup"
+                class="icon"
+              />
+              <p>Tra cứu đơn hàng</p>
+            </div>
+
+            <!-- cart -->
+            <div class="item cart">
+              <img src="./icon/cart.svg" alt="cart" class="icon" />
+              <p>Giỏ hàng</p>
+            </div>
+
+            <!-- signin -->
+            <div class="sign-in">
+              <div class="icon">
+                <img src="./icon/user.svg" alt="sign-in" />
+              </div>
+              <p>Đăng nhập</p>
+            </div>
+          </div>
         </div>
       </div>
     </header>

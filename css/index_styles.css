@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #d70018;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* ============================ common ============================ */
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.main-content {
+  max-width: calc(100% - 48px);
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================ header ============================ */
+.head-top {
+  background: #e9efff;
+  max-height: 40px;
+  padding: 5px 0;
+}
+
+.head-top .body {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head-top img {
+  height: 30px;
+  padding: 0 30px;
+}
+
+.header .nav {
+  background: var(--primary-color);
+  padding: 10px;
+}
+
+.header .nav .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 30px;
+}
+
+.header .nav .item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.category img {
+  width: 20px;
+  height: 20px;
+}
+
+.call img {
+  width: 22px;
+  height: 22px;
+}
+
+.order-lookup img {
+  width: 41px;
+  height: 24px;
+}
+
+.cart img {
+  width: 25px;
+  height: 25px;
+}
+
+.sign-in img {
+  width: 22px;
+  height: 22px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0 5px;
+}
+
+.search-bar {}
+
+.search-bar input {
+  width: 450px;
+}
+
+.search-bar i {
+  padding: 0 5px;
+}
