@@ -40,14 +40,31 @@ a {
 
 .heading2 {
   font-size: 2.2rem;
-  font-weight: 600px;
+  font-weight: 600;
   line-height: 40px;
 }
 
 .heading3 {
   font-size: 1.4rem;
   font-weight: 600;
-  height: 65px;
+  height: 60px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: var(--price-color);
+  font-weight: 700;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+.price-through {
+  font-size: 1.4rem;
+  color: #707070;
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: line-through;
 }
 
 .btn-link {
@@ -57,10 +74,24 @@ a {
   color: #444;
   font-size: 1.3rem;
   height: 34px;
-  /* padding: 5px 10px 0; */
   padding-top: 8px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp.line-3 {
+  --line-clamp: 3;
+}
+
+.break-all {
+  word-break: break-all;
 }
 
 /* ============================ header ============================ */
@@ -114,6 +145,7 @@ a {
 .header .nav .hover:hover {
   background-color: #ffffff40;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .nav .category {
@@ -184,7 +216,7 @@ a {
   margin-top: 20px;
 }
 
-.info {
+.infos {
   display: flex;
   justify-content: space-between;
 }
@@ -196,7 +228,11 @@ a {
 }
 
 .hero-left .info {
-  padding: 12px 6px;
+  padding: 12px 20px;
+}
+
+.hero-left .info:hover {
+  background: rgba(128, 128, 128, 0.252);
 }
 
 .main-banner img {
@@ -221,6 +257,65 @@ a {
   margin-top: 0;
 }
 
+/* ============================ recommend-product ============================ */
+.rec-products .body {
+  margin: 20px 0 10px;
+  padding: 15px 5px;
+  border-radius: 10px;
+}
+
+.rec-products .head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.rec-products .related-tags .btn-link {
+  margin: 0 5px;
+}
+
+.list-rec-products {
+  display: flex;
+  padding-top: 10px;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.list-rec-products .item {
+  width: 19.59%;
+  border: 0.5px solid rgba(128, 128, 128, 0.368);
+  border-radius: 10px;
+}
+
+.list-rec-products .item:hover {
+  box-shadow: 0 0 2px 3px rgba(128, 128, 128, 0.342);
+}
+
+.list-rec-products .thumb {
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: 160px;
+}
+
+.list-rec-products .price strong {
+  color: var(--price-color);
+}
+
+.list-rec-products .info-rec-product {
+  padding: 12px 10px;
+}
+
+.list-rec-products .rating {
+  margin-top: 10px;
+}
+
+.list-rec-products a {
+  color: black;
+  padding-top: 15px;
+  display: block;
+}
+
 /* ============================ popular phones ============================ */
 .popular-phones .head {
   display: flex;
@@ -228,19 +323,154 @@ a {
   margin-top: 20px;
 }
 
+.popular-phones .related-tags .btn-link {
+  margin: 0 5px;
+}
+
 .list-phones {
   display: flex;
+  padding-top: 10px;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 .list-phones .item {
-  width: 20%;
+  width: 19.6%;
+  border: 0.5px solid rgba(128, 128, 128, 0.368);
+  border-radius: 10px;
 }
 
-.list-phones .thumb img {
+.list-phones .item:hover {
+  box-shadow: 0 0 2px 3px rgba(128, 128, 128, 0.342);
+}
+
+.list-phones .thumb {
+  display: block;
+  margin: 0 auto;
   width: 160px;
   height: 160px;
 }
 
 .list-phones .price strong {
   color: var(--price-color);
+}
+
+.list-phones .info-phone {
+  padding: 12px 10px;
+}
+
+.list-phones .rating {
+  margin-top: 10px;
+}
+
+.list-phones a {
+  color: black;
+  padding-top: 15px;
+  display: block;
+}
+
+/* ============================ laptop ============================ */
+.laptops .head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.laptops .related-tags .btn-link {
+  margin: 0 5px;
+}
+
+.list-laptops {
+  display: flex;
+  padding-top: 10px;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.list-laptops .item {
+  width: 19.6%;
+  border: 0.5px solid rgba(128, 128, 128, 0.368);
+  border-radius: 10px;
+}
+
+.list-laptops .item:hover {
+  box-shadow: 0 0 2px 3px rgba(128, 128, 128, 0.342);
+}
+
+.list-laptops .thumb {
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: 160px;
+}
+
+.list-laptops .price strong {
+  color: var(--price-color);
+}
+
+.list-laptops .info-laptop {
+  padding: 12px 10px;
+}
+
+.list-laptops .rating {
+  margin-top: 10px;
+}
+
+.list-laptops a {
+  color: black;
+  padding-top: 15px;
+  display: block;
+}
+
+/* ============================ monitor ============================ */
+.monitors .head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.monitors .related-tags .btn-link {
+  margin: 0 5px;
+}
+
+.list-monitors {
+  display: flex;
+  padding-top: 10px;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.list-monitors .item {
+  width: 19.6%;
+  border: 0.5px solid rgba(128, 128, 128, 0.368);
+  border-radius: 10px;
+}
+
+.list-monitors .item:hover {
+  box-shadow: 0 0 2px 3px rgba(128, 128, 128, 0.342);
+}
+
+.list-monitors .thumb {
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: 160px;
+}
+
+.list-monitors .price strong {
+  color: var(--price-color);
+}
+
+.list-monitors .info-monitor {
+  padding: 12px 10px;
+}
+
+.list-monitors .rating {
+  margin-top: 10px;
+}
+
+.list-monitors a {
+  color: black;
+  padding-top: 15px;
+  display: block;
 }
