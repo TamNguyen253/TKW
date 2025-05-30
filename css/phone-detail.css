@@ -183,18 +183,6 @@ a {
   height: 25px;
 }
 
-.cart a {
-  display: flex;
-  align-items: center;
-  font-size: 1.2rem;
-  color: #fff;
-  padding: 0 5px;
-}
-
-.cart span {
-  padding: 0 5px;
-}
-
 .sign-in img {
   width: 22px;
   height: 22px;
@@ -231,342 +219,308 @@ a {
   border-radius: 10px;
 }
 
-/* ============================ hero ============================ */
-.hero .body {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
+/* ============================ main ============================ */
+/* top main */
+.bgc-breadcrumb,
+.header {
+  z-index: 1;
 }
 
-.infos {
-  display: flex;
-  justify-content: space-between;
-}
-
-.hero-left {
-  width: 70%;
-  box-shadow: 3px 3px 3px 1px rgba(60, 64, 67, 0.1);
-  border-radius: 10px;
-}
-
-.hero-left .info {
-  padding: 12px 20px;
-}
-
-.hero-left .info:hover {
-  background: rgba(128, 128, 128, 0.252);
-}
-
-.main-banner img {
+.bgc-breadcrumb {
+  background: #fff;
+  position: fixed;
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  height: 42px;
 }
 
-.hero-right {
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+.breadcrumb li {
+  padding: 5px;
+  color: #0000009a;
+}
+
+.breadcrumb a {
+  color: black;
+  font-weight: 600;
+}
+
+/* phone-detail */
+.detail-container {
+  display: flex;
+  gap: 20px;
+}
+
+.detail-right,
+.detail-left {
+  width: 50%;
+}
+
+/* detail left */
+.detail-left p {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.rating {
+  margin-top: 5px;
+}
+
+.rating strong {
+  font-weight: 600;
+}
+
+.rating em {
+  color: #71717a;
+}
+
+.main-img {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.main-img img {
+  width: 320px;
+  height: 320px;
+}
+
+.sub-imgs img {
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.tech-specs .heading2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.tech-specs table td,
+.tech-specs table tr {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  line-height: 1.5;
+  vertical-align: middle;
+}
+
+.tech-specs table td:first-child {
+  background: rgba(128, 128, 128, 0.126);
   width: 30%;
 }
 
-.hero-right .sub-banner img {
-  margin-top: 10px;
-  height: 126.37px;
-  box-shadow: 3px 3px 3px 1px rgba(60, 64, 67, 0.1);
-  border-radius: 10px;
-  width: 100%;
-  height: 136px;
-}
-
-.hero-right .sub-banner:first-child img {
-  margin-top: 0;
-}
-
-/* ============================ recommend-product ============================ */
-.rec-products .body {
-  margin: 20px 0 10px;
-  padding: 15px 5px;
-  border-radius: 10px;
-  background: url(../img/index/recom-products/bg-linear.webp);
-  background-size: cover;
-}
-
-.rec-products .head {
-  display: flex;
-  justify-content: space-between;
+.FAQ .heading2 {
   margin-top: 20px;
+  display: block;
 }
 
-.rec-products .rec-top {
+.FAQ .btn-link {
   display: flex;
   align-items: center;
-}
-
-.rec-products .related-tags .btn-link {
-  margin: 0 5px;
-}
-
-.rec-products .title {
-  color: rgb(4, 41, 122);
-  padding: 0 8px;
-}
-
-.rec-products .fa-solid {
-  font-size: 20px;
-}
-
-.list-rec-products {
-  display: flex;
-  padding-top: 10px;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.list-rec-products .item {
-  width: 19.59%;
-  border: 0.5px solid rgba(128, 128, 128, 0.368);
-  border-radius: 10px;
-  background: #fff;
-}
-
-.list-rec-products .item:hover {
-  box-shadow: 0 0 2px 3px rgba(128, 128, 128, 0.342);
-}
-
-.list-rec-products .thumb {
-  display: block;
-  margin: 0 auto;
-  width: 160px;
-  height: 160px;
-}
-
-.list-rec-products .price strong {
-  color: var(--price-color);
-}
-
-.list-rec-products .info-rec-product {
-  padding: 12px 10px;
-}
-
-.list-rec-products .rating {
   margin-top: 10px;
-}
-
-.list-rec-products a {
-  color: black;
-  padding-top: 15px;
-  display: block;
-}
-
-/* ============================ popular phones ============================ */
-.popular-phones .head {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.popular-phones .related-tags .btn-link {
-  margin: 0 5px;
-}
-
-.list-phones {
-  display: flex;
-  padding-top: 10px;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.list-phones .item {
-  width: 19.6%;
-  border: 0.5px solid rgba(128, 128, 128, 0.368);
-  border-radius: 10px;
-}
-
-.list-phones .item:hover {
-  box-shadow: 0 0 2px 3px rgba(128, 128, 128, 0.342);
-}
-
-.list-phones .thumb {
-  display: block;
-  margin: 0 auto;
-  width: 160px;
-  height: 160px;
-}
-
-.list-phones .price strong {
-  color: var(--price-color);
-}
-
-.list-phones .info-phone {
-  padding: 12px 10px;
-}
-
-.list-phones .rating {
-  margin-top: 10px;
-}
-
-.list-phones a {
-  color: black;
-  padding-top: 15px;
-  display: block;
-}
-
-/* ============================ laptop ============================ */
-.laptops .head {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.laptops .related-tags .btn-link {
-  margin: 0 5px;
-}
-
-.list-laptops {
-  display: flex;
-  padding-top: 10px;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.list-laptops .item {
-  width: 19.6%;
-  border: 0.5px solid rgba(128, 128, 128, 0.368);
-  border-radius: 10px;
-}
-
-.list-laptops .item:hover {
-  box-shadow: 0 0 2px 3px rgba(128, 128, 128, 0.342);
-}
-
-.list-laptops .thumb {
-  display: block;
-  margin: 0 auto;
-  width: 160px;
-  height: 160px;
-}
-
-.list-laptops .price strong {
-  color: var(--price-color);
-}
-
-.list-laptops .info-laptop {
-  padding: 12px 10px;
-}
-
-.list-laptops .rating {
-  margin-top: 10px;
-}
-
-.list-laptops a {
-  color: black;
-  padding-top: 15px;
-  display: block;
-}
-
-/* ============================ monitor ============================ */
-.monitors .head {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.monitors .related-tags .btn-link {
-  margin: 0 5px;
-}
-
-.list-monitors {
-  display: flex;
-  padding-top: 10px;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.list-monitors .item {
-  width: 19.6%;
-  border: 0.5px solid rgba(128, 128, 128, 0.368);
-  border-radius: 10px;
-}
-
-.list-monitors .item:hover {
-  box-shadow: 0 0 2px 3px rgba(128, 128, 128, 0.342);
-}
-
-.list-monitors .thumb {
-  display: block;
-  margin: 0 auto;
-  width: 160px;
-  height: 160px;
-}
-
-.list-monitors .price strong {
-  color: var(--price-color);
-}
-
-.list-monitors .info-monitor {
-  padding: 12px 10px;
-}
-
-.list-monitors .rating {
-  margin-top: 10px;
-}
-
-.list-monitors a {
-  color: black;
-  padding-top: 15px;
-  display: block;
-}
-
-/* ============================ payment-offer ============================ */
-.payment-offer h2 {
-  margin: 20px 0 5px;
-}
-
-.pay-imgs {
-  display: flex;
-  gap: 10px;
-}
-
-.pay-imgs a {
-  width: 25%;
-}
-
-.payment-offer img {
-  box-shadow: 0px 3px 6px 0px rgba(128, 128, 128, 0.46);
-  border-radius: 10px;
   width: 100%;
+  padding: 20px;
+  font-weight: 600;
 }
 
-/* ============================ tech-news ============================ */
-.tech-news h2 {
-  margin: 20px 0 5px;
+.FAQ i {
+  margin-left: auto;
 }
 
-.news-imgs {
+/* detail right */
+.prod-price {
+  width: 50%;
+}
+
+.prod-price p {
+  display: inline-block;
+  margin-top: 60px;
+  padding: 0 50px 0 0;
+}
+
+.prod-price strong {
+  padding: 5px 5px 20px 0;
+  color: var(--price-color);
+}
+
+.version p {
+  height: 20px;
+}
+
+.version ul {
   display: flex;
-  gap: 10px;
-  justify-content: space-between;
 }
 
-.tech-news img {
+.version a {
+  color: black;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.208);
   border-radius: 10px;
-  width: 100%;
+  margin-right: 10px;
 }
 
-.tech-news .item {
-  padding: 5px;
-  box-shadow: 0px 3px 6px 0px rgba(128, 128, 128, 0.46);
+.heading3.color {
+  margin-top: 20px;
+  height: 20px;
+}
+
+.color-list {
+  display: flex;
+}
+
+.color-list .color {
+  display: flex;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.208);
   border-radius: 10px;
-  min-width: 0;
+  margin-right: 10px;
 }
 
-.tech-news .item:hover {
-  box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.46);
+.color img {
+  width: 40px;
+  height: 40px;
 }
 
-.tech-news .title {
-  padding: 5px;
-  color: rgb(60, 60, 60);
-  line-height: 1.5;
+.color .title {
+  font-weight: 700;
+  padding-bottom: 5px;
 }
 
+.color .info {
+  margin-left: 10px;
+}
+
+.cta-group {
+  display: flex;
+  margin-top: 20px;
+}
+
+.buy-now {
+  width: 50%;
+  margin: 0 10px;
+}
+
+.buy-on-instal {
+  width: 20%;
+}
+
+.add-cart {
+  width: 30%;
+}
+
+.buy-now .title {
+  text-align: center;
+}
+
+.buy-now .desc {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.buy-on-instal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #3b82f6;
+  border-radius: 10px;
+}
+
+.buy-on-instal p {
+  color: #3b82f6;
+  font-weight: 700;
+}
+
+.add-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+.add-cart i,
+.add-cart span {
+  color: var(--primary-color);
+}
+
+.add-cart i {
+  margin-right: 5px;
+}
+
+.review .body {
+  background: #f7f7f8;
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  margin: 20px;
+  padding: 15px;
+}
+
+.review-left {
+  width: 30%;
+  text-align: center;
+  padding-top: 2px;
+}
+
+.review-right {
+  width: 70%;
+}
+
+.review-left .star {
+  margin-top: 8px;
+}
+
+.review-left strong {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.review-left em {
+  font-size: 1.8rem;
+}
+
+.review-left p {
+  margin-top: 8px;
+}
+
+.review-left .btn {
+  margin-top: 8px;
+}
+
+.review-right p {
+  position: relative;
+  height: 20%;
+}
+
+.review-right span::before {
+  position: absolute;
+  top: 7px;
+  left: 40px;
+  display: block;
+  content: "";
+  width: 60%;
+  height: 5px;
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+.review-right span {
+  padding-left: 500px;
+  font-weight: 200;
+  font-size: 1.4rem;
+}
 /* ============================ footer ============================ */
 .footer {
   background: #f7f7f8;

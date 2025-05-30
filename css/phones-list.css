@@ -286,7 +286,7 @@ a {
 
 .sort .btn-link {
   display: flex;
-  margin-right: 15px;
+  margin-right: 12px;
 }
 
 .btn-link span {
@@ -351,6 +351,21 @@ a {
   display: block;
 }
 
+.see-more {
+  max-width: 500px;
+  margin: 10px auto 0;
+}
+
+.see-more p {
+  padding: 10px 100px;
+  background: #fff;
+  box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.071);
+  border-radius: 10px;
+}
+
+.see-more i {
+  padding-left: 10px;
+}
 
 /* ============================ footer ============================ */
 .footer {

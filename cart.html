@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+
+    <!-- embed fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- embed font icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/cart.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header fixed">
+      <!-- head-top -->
+      <div class="head-top">
+        <div class="main-content">
+          <div class="body">
+            <!-- banner1 -->
+            <a href="">
+              <img
+                src="./img/header/Top banner_Smember.svg"
+                alt="Top banner_Smember"
+              />
+            </a>
+
+            <!-- banner2 -->
+            <a href="">
+              <img
+                src="./img/header/Top banner_Giao hang.svg"
+                alt="Top banner_Giao hang"
+              />
+            </a>
+
+            <!-- banner3 -->
+            <a href="">
+              <img
+                src="./img/header/Top banner_Thu cu.svg"
+                alt="Top banner_Thu cu"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- nav -->
+      <div class="nav">
+        <div class="main-content">
+          <div class="body">
+            <!-- logo -->
+            <div class="logo">
+              <a href="./index.html">
+                <img src="./img/header/logo.png" alt="logo" />
+              </a>
+            </div>
+
+            <!-- category -->
+            <div class="item category">
+              <div class="icon">
+                <a href="">
+                  <img src="./icon/category.svg" alt="category" />
+                </a>
+              </div>
+              <p>Danh mục</p>
+            </div>
+
+            <!-- search bar -->
+            <div class="item search-bar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                name="txt-search-bar"
+                placeholder="Bạn cần tìm gì"
+              />
+            </div>
+
+            <!-- call -->
+            <div class="item call hover">
+              <div class="icon">
+                <img src="./icon/call.svg" alt="call" />
+              </div>
+              <p>
+                Gọi mua hàng <br />
+                <span>1800.2097</span>
+              </p>
+            </div>
+
+            <!-- order lookup -->
+            <div class="item order-lookup hover">
+              <img
+                src="./icon/order-lookup.svg"
+                alt="order-lookup"
+                class="icon"
+              />
+              <p>Tra cứu đơn hàng</p>
+            </div>
+
+            <!-- cart -->
+            <div class="item cart hover">
+              <img src="./icon/cart.svg" alt="cart" class="icon" />
+              <p>Giỏ hàng</p>
+            </div>
+
+            <!-- signin -->
+            <div class="sign-in">
+              <div class="icon">
+                <img src="./icon/user.svg" alt="sign-in" />
+              </div>
+              <p>Đăng nhập</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="body">
+        <p class="heading2">Giỏ hàng của bạn</p>
+        <div class="add-del-all">
+          <div class="add-all">
+            <input type="radio" name="rad_add" id="add-all" /> Chọn tất cả
+          </div>
+          <p class="del-all">Xóa tất cả</p>
+        </div>
+
+        <div class="cart-container">
+          <input type="radio" name="" id="" />
+          <img src="./img/phone-detail/main-img.webp" alt="" />
+
+          <div class="info">
+            <p class="pro-name">
+              iPhone 16 Pro Max 256GB | Chính hãng VN/A-Titan Sa Mạc
+            </p>
+            <strong class="price">30.490.000đ</strong>
+            <span class="price-through">34.990.000đ</span>
+          </div>
+
+          <div class="del-quantity">
+            <div class="trash-can"><i class="fa-regular fa-trash-can"></i></div>
+            <div class="quantity">
+              <button class="del btn-link">-</button>
+              <span>2</span>
+              <button class="add btn-link">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="buynow-contain">
+          <div class="subtotal">
+            <p class="title">
+              Tạm tính:
+              <span class="price">30.490.000đ</span>
+            </p>
+            <p class="desc">Chưa bao gồm chiết khấu SMenber</p>
+          </div>
+
+          <div class="buy-now">
+            <a href="" class="btn">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
