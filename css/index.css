@@ -574,7 +574,7 @@ a {
   margin-top: 10px;
 }
 
-.footer-top a {
+.btn-policy {
   color: rgba(33, 33, 33, 0.658);
   font-size: 1.4rem;
   line-height: 2.5;
@@ -655,4 +655,28 @@ a {
 .footer-bot .algin {
   display: flex;
   justify-content: center;
+}
+
+.h4-footer {
+  margin-top: 10px;
+}
+
+#inp-footer {
+  margin-top: 10px;
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.362);
+  padding: 10px;
+}
+
+.btn-regis {
+  padding: 10px;
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.regis-mews {
+  margin-top: 0;
 }

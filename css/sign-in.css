@@ -311,12 +311,14 @@ p.or::after {
   background: rgba(0, 0, 0, 0.252);
 }
 
-.container  input {
+.container input {
   display: block;
   width: 100%;
   height: 40px;
   margin: 0 auto;
   padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 input.tk {
